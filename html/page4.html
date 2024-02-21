@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/page4.css">
+</head>
+
+<body>
+	<header>
+		<ul>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='../点这里打开网页.html';">
+					剪纸简介
+				</a>
+			</li>
+			<!-- <li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page2.html';">
+					角色介绍</a>
+			</li> -->
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='page3.html';">
+					实地调研</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='page4.html';">
+					剪纸博物馆</a>
+			</li>
+			<!-- <li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page5.html';">
+					动画音乐</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page6.html';">
+					经典语句</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page7.html';">
+					放映信息</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page8.html';">
+					获奖记录</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page9.html';">
+					作品评价</a>
+			</li> -->
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='page10.html';">
+					用户感触</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='page11.html';">
+					剪纸文创</a>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<h2>剪纸博物馆</h2>
+		<p>剪纸博物馆的创意来自于对中国传统文化的深刻理解和现代设计理念的创新结合。该项目旨在展示剪纸艺术的丰富多样性和深远影响，同时为访客提供一个互动式的学习和体验空间。设计团队深入研究了剪纸艺术的历史、技巧和文化意义，将这些元素巧妙融入博物馆的建筑设计和展览布局中。通过使用现代科技，如增强现实(AR)和虚拟现实(VR)，参观者可以不仅欣赏到经典的剪纸作品，还能亲手体验剪纸的乐趣，深入了解这项艺术背后的故事和技巧。博物馆的目标是让这项古老的艺术形式焕发新生，吸引更广泛的观众群体，特别是年轻一代，让他们认识并欣赏中国传统文化的魅力。此外，博物馆还计划定期举办特展和工作坊，邀请剪纸艺术家分享他们的创作经验，推动这项传统艺术的创新和传承。 </p>
+		<!-- <img src="../images/p2.jpg"> -->
+		<img src="../images/p3.jpg">
+		<img src="../images/p4.jpg">
+		<img src="../images/p5.jpg">
+		<img src="../images/p6.jpg">
+		<ul class="ul1">
+			<li>通过收藏和展示各种历史和现代剪纸作品，剪纸博物馆为这项传统艺术提供了一个保护和传承的平台。</li>
+			<li>博物馆可以通过展览、讲座、工作坊和互动展示等方式，教育公众了解剪纸艺术的历史背景、文化意义和技术细节。</li>
+			<li>剪纸博物馆提供一个平台，鼓励艺术家创新传统技法，探索剪纸艺术的新可能性。</li>
+			<li>通过利用最新的科技，如虚拟现实(VR)、增强现实(AR)和互动多媒体展示，剪纸博物馆将传统艺术与现代科技相结合，为参观者提供了沉浸式的体验。</li>
+			<!-- <li>影片曾被时光网误传在2012年12月29日上映，《大鱼海棠》在网站上的期待分数高达9.5分，为当年所有即将上映电影最高分。</li> -->
+		</ul>
+	</main>
+	<audio id="audioElementId" src="../video/dayv.ogg" autoplay="autoplay" loop="loop" hidden="true"
+		style="display: none;">
+		你的浏览器版本太低
+	</audio>
+
+	<script>
+		function saveCurrentPlayTime() {
+			var audioElement = document.getElementById("audioElementId");
+			audioElement.currentTime = localStorage.getItem("bgMusicCurrentTime");
+			audioElement.play();
+			localStorage.setItem("bgMusicCurrentTime", audioElement.currentTime);
+		}
+		function setCurrentPlayTime() {
+			var audioElement = document.getElementById("audioElementId");
+			localStorage.setItem("bgMusicCurrentTime", audioElement.currentTime);
+		}
+
+		window.onload = saveCurrentPlayTime;
+	</script>
+</body>
+
+</html>
