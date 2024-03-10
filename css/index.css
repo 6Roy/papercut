@@ -1,11 +1,35 @@
-header img {
-	position: absolute;
-	right: 150px;
-	top: 150px;
-	width: 400px; /* 确保图片的宽度和高度相等 */
-    height: 400px; /* 确保图片的宽度和高度相等 */
-	border-radius: 50%;
-	box-shadow: 0px 0px 10px 10px #bc2e22;
+header {
+    display: flex;
+    justify-content: space-around; /* This will space out the images evenly */
+    align-items: center; /* This will align images vertically */
+}
+header .img1 {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px #bc2e22;
+    z-index: 10;
+}
+header .img2 {
+    position: absolute;
+    right: 200px;
+    top: 250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px #bc2e22;
+}
+header .img3 {
+    position: absolute;
+    right: 300px; /* 修改这个值，确保图片不会超出屏幕 */
+    top: 400px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px #bc2e22;
 }
 
 header ul {
@@ -44,13 +68,15 @@ main h1 {
 	color: #fff;
 	line-height: 50px;
 	text-align: center;
+	margin-left: 50px;
 }
 
 main .text p {
-	color: lightyellow;
+	color: #fff;
 	font-size: 14px;
 	line-height: 30px;
 	text-indent: 2em;
+	margin-left: 300px;
 }
 
 main .ping {
@@ -59,18 +85,19 @@ main .ping {
 	font-size: 14px;
 	line-height: 30px;
 	padding: 20px;
+	margin-left: 300px;
 }
 
 main .ping .p1 {
-	color: #e8b98d;
+	color: #fff;
 }
 
 main .ping .p2 {
-	color: #b2652d;
+	color: #fff;
 }
 
 main .ping .p3 {
-	color: #644125;
+	color: #fff;
 }
 
 main p span {

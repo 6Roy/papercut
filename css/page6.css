@@ -54,9 +54,11 @@ main form {
 }
 
 main form span {
+	color:#fff;
 	width: 100px;
 	display: inline-block;
 	vertical-align: top;
+	margin-left: 100px;
 }
 
 main form input {

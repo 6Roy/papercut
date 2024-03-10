@@ -72,7 +72,7 @@ header ul li a:hover {
 }
 
 main h2 {
-	color: #b2652d;
+	color: #fff;
 	line-height: 60px;
 	text-align: center;
 	font-size: 34px;
@@ -80,5 +80,5 @@ main h2 {
 	width: 20%;
 	margin: 10px auto;
 	letter-spacing: 2px;
-	text-shadow: 4px 3px 3px #b7a696;
+	
 }

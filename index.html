@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<audio src="video/dayv.ogg" autoplay="autoplay" loop="loop" hidden="true">
+		你的浏览器版本太低
+	</audio>
+</head>
+
+<body>
+
+	<header>
+
+		<ul>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='index.html';">
+					项目简介
+				</a>
+			</li>
+			<!-- <li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page2.html';">
+					角色介绍</a>
+			</li> -->
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page3.html';">
+					交互体验</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page4.html';">
+					剪纸博物馆</a>
+			</li>
+			<!-- <li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page5.html';">
+					动画音乐</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page6.html';">
+					经典语句</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page7.html';">
+					放映信息</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page8.html';">
+					获奖记录</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page9.html';">
+					作品评价</a>
+			</li> -->
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page11.html';">
+					剪纸文创</a>
+			</li>
+			<li>
+				<a href="#" onclick="saveCurrentPlayTime(); window.location.href='html/page10.html';">
+					用户交流</a>
+			</li>
+		</ul>
+
+		<img src="images/banner.jpg" class="img1" alt="Banner Image">
+		<img src="images/p7.jpg" class="img2" alt="Image 2">
+		<img src="images/p8.jpg" class="img3" alt="Image 3">
+
+
+
+	</header>
+	<main>
+		<div class="ping">
+			<h1>OvOnic小窝</h1>
+			<p class="p1">OvOnic小窝顺应新时代乡村振兴产业要术，结念"元宇宙+乡村振兴”发
+				展顶层规判和IP内容挖掘，目的是希望通过乡村振兴的项目来帮助某个特殊群体，再
+				做到受帮助的群体和帮助他人的群体互助，都能有所得。在提升商业价值的同时
+				升华人文价值，带来人文关怀。
+			</p>
+		</div>
+		<div class="ping">
+			<p class="p1">剪纸艺术：从村庄采集到A1精细化生成，加上数字化特效成力公益广告
+				剪纸艺术是中国传统文化中的瑰宝，我们可以通过将传统剪纸艺术与数字化技术相结合，创作出更具创意和视觉冲击力的公益广告。首先，我们可以在乡村收集传统的剪纸作品，然后利用AI技术对这些作品进行精细化生成，最后结合数字化特效，制作出独具特色的公益广告。
+			</p>
+			<p class="p2">AI模型训练：训练出我们自己的非遗数字博物馆的模型
+				利用AI技术，我们可以训练出自己的非遗数字博物馆模型。这个模型可以基于大量的非遗数据，生成虚拟的非遗展示空间，让用户可以在虚拟环境中浏览和体验非遗文化。此外，这个模型还可以根据用户的兴趣和需求，智能推荐相关的非遗内容和活动。
+			</p>
+			<p class="p3">
+				衍生文创产品：结合AI技术和剪纸艺术，我们可以开发出一系列独具特色的文创产品。例如，利用AI技术生成的剪纸艺术图像，可以用于制作手机壳、T恤、明信片等产品。这些产品不仅可以传播剪纸艺术，也可以为非遗文化的保护和发展提供经济支持。
+			</p>
+			<p class="p3">
+				非遗可视化传播的全路径：利用AI技术，我们可以将非遗文化以一种更加生动、直观的方式展示给公众。例如，我们可以利用AI技术生成非遗项目的动画演示，或者制作虚拟的非遗体验场景。这样的可视化传播方式，可以大大提升公众对非遗文化的认知和兴趣。
+			</p>
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+	<audio id="audioElementId" src="video/dayv.ogg" autoplay="autoplay" loop="loop" hidden="true"
+		style="display: none;">
+		你的浏览器版本太低
+	</audio>
+
+	<!-- <script>
+		function saveCurrentPlayTime() {
+			var audioElement = document.getElementById("audioElementId");
+			localStorage.setItem("bgMusicCurrentTime", audioElement.currentTime);
+		}
+	</script> -->
+	<script>
+		function saveCurrentPlayTime() {
+			var audioElement = document.getElementById("audioElementId");
+			audioElement.currentTime = localStorage.getItem("bgMusicCurrentTime");
+			audioElement.play();
+			localStorage.setItem("bgMusicCurrentTime", audioElement.currentTime);
+		}
+		function setCurrentPlayTime() {
+			var audioElement = document.getElementById("audioElementId");
+			localStorage.setItem("bgMusicCurrentTime", audioElement.currentTime);
+		}
+
+		window.onload = saveCurrentPlayTime;
+	</script>
+</body>
+
+</html>

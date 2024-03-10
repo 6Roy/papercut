@@ -1,5 +1,5 @@
 main h2{
-	color: #b2652d;
+	color: #fff;
 	line-height: 60px;
 	text-align: center;
 	font-size: 34px;
@@ -7,7 +7,8 @@ main h2{
 	width: 15%;
 	margin: 10px auto;
 	letter-spacing: 2px;
-	text-shadow: 4px 3px 3px #b7a696;
+	margin-left: 600px;
+	
 }
 main ul{
 	width: 80%;
@@ -25,9 +26,11 @@ main ul li img{
 	float: left;
 	/* margin: auto; */
 	display: block;
-	/* margin-right: 30px; */
+	margin-top: 20px;
+	margin-right: 20px;
 }
 main .ul_3{
+	color: #fff;
 	width: 70%;
 	margin:20px auto;
 }
